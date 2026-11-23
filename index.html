@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overtime Pizza Sporthouse | Pizza a la leña en Cochabamba</title>
+<meta name="description" content="Overtime Pizza Sporthouse — El arte de hacer pizzas a la leña con sabor. Pide en línea, personaliza tu pizza y elige tu sucursal en Cochabamba.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-overtime.png" fetchpriority="high">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#inicio" class="navbar__brand">
+      <img src="assets/overtime-logo.png" alt="" class="navbar__logo" width="42" height="42" fetchpriority="high">
+      <span class="navbar__brand-copy"><strong>OVERTIME</strong><small>Cochabamba · Bolivia</small></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#nosotros" class="nav-link">Sobre nosotros</a>
+      <a href="#menu" class="nav-link">Menú</a>
+      <a href="#sucursales" class="nav-link">Sucursales</a>
+      <a href="#promos" class="nav-link">Promos</a>
+      <a href="#pedidos" class="nav-link">Pedidos</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <button class="cart-btn" id="cartToggle" aria-label="Ver mi pedido">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <span class="cart-btn__count" id="cartCount">0</span>
+      </button>
+      <a href="#sucursales" class="branch-shortcut" aria-label="Ver sucursales">⌖</a>
+      <a href="#pedidos" class="btn btn--gold navbar__cta">PEDIR AHORA </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero__bg" role="img" aria-label="Pizza artesanal horneada a la leña"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__badges"><span>MATCHDAY ZONE</span><span>♨ LEÑA VIVA</span></div>
+
+  <div class="hero__content container reveal">
+    <p class="eyebrow">PIZZA A LA LEÑA · COCHABAMBA</p>
+    <h1 class="hero__title">OVERTIME PIZZA<br><span>SPORTHOUSE</span></h1>
+    <p class="hero__phrase">El arte de hacer pizzas a la leña con sabor.<br>Sabor que juega en otra liga.</p>
+    <div class="hero__actions">
+      <a href="#menu" class="btn btn--outline-gold">⚑ &nbsp; PEDIR AHORA</a>
+      <a href="#menu" class="btn btn--gold">✣ &nbsp; VER MENÚ</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-highlights container" aria-label="Información destacada">
+  <a class="active-branch reveal" href="#sucursales">
+    <span class="active-branch__icon" aria-hidden="true">⌖</span>
+    <span><strong>Overtime Zenon Salinas</strong><small>Zona Norte · Consulta horarios y disponibilidad</small></span>
+    <span class="active-branch__badge">ACTIVA</span><span class="active-branch__arrow" aria-hidden="true">›</span>
+  </a>
+  <a class="matchday-card reveal" href="#promos">
+    <span>CONSULTA LA CARTELERA EN SUCURSAL</span>
+    <strong>FÚTBOL EN PANTALLAS GIGANTES</strong>
+    <small>MESA + PIZZA</small>
+  </a>
+</section>
+
+<!-- ============ PROMOS ============ -->
+<section class="promos" id="promos">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div><p class="eyebrow">MARCADOR DE OFERTAS</p><h2 class="section-title">PROMOCIONES PUBLICADAS</h2></div>
+      <span class="section-hint">Desliza →</span>
+    </div>
+    <div class="promos__grid" id="promosGrid">
+      <article class="promo-card reveal">
+        <img src="assets/promo-hawaiana.png" alt="Pizza jamón y queso hawaiana" class="promo-card__img" loading="lazy" decoding="async">
+        <div class="promo-card__overlay"></div>
+        <div class="promo-card__content">
+          <span class="promo-card__day">DOMINGO</span><span class="promo-card__price">Bs. 60</span>
+          <h3 class="promo-card__title">JAMÓN &amp; QUESO HAWAIANA</h3>
+          <p class="promo-card__desc">Familiar 8 porciones. Dulzor artesanal con piña caramelizada a la brasa.</p>
+          <button type="button" class="btn btn--gold btn--sm" data-pizza-order="hawaiana" data-promo-name="DOMINGO" data-promo-size="Familiar · 8 porciones" data-promo-price="60">PEDIR AHORA</button>
+        </div>
+      </article>
+      <article class="promo-card reveal">
+        <img src="assets/promo-venna.png" alt="Pizza Venna súper familiar" class="promo-card__img" loading="lazy" decoding="async">
+        <div class="promo-card__overlay"></div>
+        <div class="promo-card__content">
+          <span class="promo-card__day">SÁBADO</span><span class="promo-card__price">Bs. 68</span>
+          <h3 class="promo-card__title">VENNA SÚPER FAMILIAR</h3>
+          <p class="promo-card__desc">10 porciones colosales para disfrutar con toda la hinchada en la mesa.</p>
+          <button type="button" class="btn btn--gold btn--sm" data-pizza-order="venna" data-promo-name="SÁBADO" data-promo-size="Súper familiar · 10 porciones" data-promo-price="68">PEDIR AHORA</button>
+        </div>
+      </article>
+      <article class="promo-card reveal">
+        <img src="assets/promo-barbacoa.png" alt="Pizza barbacoa especial" class="promo-card__img" loading="lazy" decoding="async">
+        <div class="promo-card__overlay"></div>
+        <div class="promo-card__content">
+          <span class="promo-card__day">VIERNES</span><span class="promo-card__price">Bs. 56</span>
+          <h3 class="promo-card__title">BARBACOA ESPECIAL</h3>
+          <p class="promo-card__desc">Salsa BBQ artesanal ahumada, cebolla caramelizada y masa crocante.</p>
+          <button type="button" class="btn btn--gold btn--sm" data-pizza-order="barbacoa" data-promo-name="VIERNES" data-promo-size="Porciones familiares" data-promo-price="56">PEDIR AHORA</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESPECIALIDADES ============ -->
+<section class="featured">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div><p class="eyebrow">LOS MVP DEL HORNO</p><h2 class="section-title">ESPECIALIDADES FAVORITAS</h2></div>
+      <a href="#menu" class="text-link">VER TODAS <span aria-hidden="true">›</span></a>
+    </div>
+    <div class="featured__grid" id="featuredGrid"></div>
+  </div>
+</section>
+
+<section class="perks container" aria-label="Lo mejor de Overtime">
+  <article><span aria-hidden="true">♨</span><h3>100% LEÑA</h3><p>Sabor Quebracho</p></article>
+  <article><span aria-hidden="true">◷</span><h3>RÁPIDO</h3><p>Listo al entretiempo</p></article>
+  <article><span aria-hidden="true">⚽</span><h3>AMBIENTE</h3><p>Fútbol &amp; Amigos</p></article>
+</section>
+
+<!-- ============ SOBRE NOSOTROS ============ -->
+<section class="about" id="nosotros">
+  <div class="container about__grid">
+    <div class="about__media reveal">
+      <img src="assets/hero-overtime.png" alt="Pizza artesanal cocinándose en el horno de leña" class="about__img" loading="lazy" decoding="async">
+    </div>
+    <div class="about__text reveal">
+      <p class="eyebrow">ADN OVERTIME SPORTHOUSE</p>
+      <h2 class="section-title">NO HACEMOS SIMPLEMENTE PIZZA. CREAMOS MOMENTOS PARA COMPARTIR.</h2>
+      <p class="about__desc">Nacimos en Cochabamba con la obsesión de combinar la pasión por el deporte con la autenticidad del fuego lento. Cada masa reposa 24 horas y se hornea a más de 400°C para celebrar cada gol como se merece.</p>
+      <a class="btn btn--outline-gold" href="#sucursales">CONOCE NUESTRA SUCURSAL</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMBO / CONTACTO ============ -->
+<section class="combo container">
+  <a href="#menu" class="combo__card reveal"><span aria-hidden="true">🍕</span><span><strong>ARMA TU COMBO MATCHDAY</strong><small>Pizzas, alitas &amp; bebidas heladas</small></span><b aria-hidden="true">›</b></a>
+  <a class="combo__contact reveal" href="https://wa.me/59179961575?text=Hola%20Overtime%2C%20quiero%20consultar%20sobre%20una%20reserva" target="_blank" rel="noopener noreferrer">CONTACTO GENERAL <strong>+591 79961575</strong></a>
+</section>
+
+<!-- ============ MENÚ COMPLETO ============ -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">NUESTRO MENÚ</p>
+      <h2 class="section-title">SABORES QUE JUEGAN EN OTRA LIGA</h2>
+      <p class="section-sub">Elige tu pizza, personaliza tamaño e ingredientes y revisa el total antes de agregarla.</p>
+    </div>
+    <div class="menu__grid" id="menuGrid">
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUCURSALES ============ -->
+<section class="branches" id="sucursales">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">SUCURSALES · COCHABAMBA</p>
+      <h2 class="section-title">NUESTRAS SUCURSALES</h2>
+      <p class="section-sub">Elige dónde recoger tu pedido y consulta el horario o la ubicación.</p>
+    </div>
+
+    <div class="branches__grid" id="branchesGrid">
+      <!-- Las tarjetas de sucursal se generan dinámicamente desde script.js (array SUCURSALES) -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<!-- ============ PEDIDOS / CARRITO ============ -->
+<section class="orders" id="pedidos">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow"> PEDIDOS</p>
+      <h2 class="section-title">ARMA TU PEDIDO</h2>
+      <p class="section-sub">Completa estos pasos para revisar y enviar tu pedido sin sorpresas.</p>
+    </div>
+
+    <div class="orders__panel reveal">
+      <div class="orders__branch">
+        <p class="orders__step">PASO 1</p>
+        <h3 class="orders__subtitle">ELIGE TU SUCURSAL</h3>
+        <p class="orders__hint">La sucursal es necesaria para preparar tu pedido.</p>
+        <div class="orders__branch-select" id="branchSelect">
+          <!-- Opciones generadas desde script.js -->
+        </div>
+      </div>
+
+      <div class="orders__summary">
+        <p class="orders__step">PASOS 2 Y 3</p>
+        <h3 class="orders__subtitle">REVISA Y CONFIRMA</h3>
+        <p class="orders__hint">Ajusta cantidades, edita o quita pizzas antes de continuar.</p>
+        <div id="orderItemsEmpty" class="orders__empty">Todavía no agregaste pizzas. Ve al <a href="#menu">menú</a> y personaliza la tuya.</div>
+        <div id="orderItemsList" class="orders__items"></div>
+        <p class="orders__status" id="orderStatus" role="status" aria-live="polite"></p>
+        <div class="orders__total">
+          <span>TOTAL DEL PEDIDO:</span>
+          <span id="orderTotal">Bs. 0</span>
+        </div>
+        <button class="btn btn--gold btn--block" id="checkoutBtn">FINALIZAR PEDIDO</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="assets/overtime-logo.png" alt="" class="footer__logo" loading="lazy" decoding="async">
+      <p>Overtime Pizza Sporthouse</p>
+      <p class="footer__city">Cochabamba, Bolivia</p>
+    </div>
+
+    <div class="footer__links">
+      <h4>Navegación</h4>
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#sucursales">Sucursales</a>
+      <a href="#promos">Promos</a>
+      <a href="#pedidos">Pedidos</a>
+    </div>
+
+    <div class="footer__contact">
+      <h4>Contacto</h4>
+      <!-- INSTAGRAM: reemplazar por el enlace real -->
+      <a href="https://instagram.com/pizzaovertime" target="_blank" rel="noopener">Instagram @pizzaovertime</a>
+      <!-- WhatsApp general de Overtime -->
+      <a href="https://wa.me/59179961575" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="tel:4799193">Llamar</a>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; <span id="year"></span> Overtime Pizza Sporthouse. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Navegación principal">
+  <a href="#inicio" class="bottom-nav__link bottom-nav__link--active"><span aria-hidden="true">⌂</span>INICIO</a>
+  <a href="#menu" class="bottom-nav__link"><span aria-hidden="true">◈</span>MENÚ</a>
+  <a href="#sucursales" class="bottom-nav__link"><span aria-hidden="true">⌖</span>SUCURSALES</a>
+  <a href="#pedidos" class="bottom-nav__link"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></span>MI PEDIDO</a>
+</nav>
+
+<!-- ============ MODAL DE PERSONALIZACIÓN ============ -->
+<div class="modal-overlay" id="customizeModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalPizzaName">
+    <button class="modal__close" id="modalClose" aria-label="Cerrar">&times;</button>
+
+    <div class="modal__header">
+      <img id="modalPizzaImg" alt="" class="modal__img">
+      <div>
+        <h3 id="modalPizzaName" class="modal__title"></h3>
+        <p id="modalPizzaDesc" class="modal__desc"></p>
+      </div>
+    </div>
+
+    <div class="modal__section">
+      <h4 class="modal__section-title">1. ELIGE EL TAMAÑO</h4>
+      <div class="size-options" id="sizeOptions"></div>
+    </div>
+
+    <div class="modal__section">
+      <h4 class="modal__section-title">2. PERSONALIZA INGREDIENTES</h4>
+      <div class="ingredient-list" id="ingredientList"></div>
+    </div>
+
+    <div class="modal__footer">
+      <div class="modal__total"><span id="modalTotalLabel">TOTAL DE ESTA PIZZA:</span> <span id="modalTotal">Bs. 0</span></div>
+      <p class="modal__price-note">El precio incluye tamaño e ingredientes adicionales.</p>
+      <button class="btn btn--gold btn--block" id="addToCartBtn">AGREGAR AL PEDIDO</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PANEL LATERAL CARRITO ============ -->
+<div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+  <aside class="cart-panel" id="cartPanel" role="dialog" aria-modal="true" aria-label="Tu carrito" tabindex="-1">
+    <div class="cart-panel__header">
+      <h3>TU CARRITO</h3>
+      <button class="modal__close" id="cartClose" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <div class="cart-panel__body" id="cartPanelBody">
+      <p class="orders__empty" id="cartPanelEmpty">Tu carrito está vacío.</p>
+    </div>
+    <div class="cart-panel__footer">
+      <div class="cart-panel__branch" id="cartPanelBranch">Sucursal: <strong>Sin seleccionar</strong></div>
+      <div class="cart-panel__total">TOTAL: <span id="cartPanelTotal">Bs. 0</span></div>
+      <button class="btn btn--gold btn--block" id="cartCheckoutBtn">FINALIZAR PEDIDO</button>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ MODAL RESUMEN / CONFIRMACIÓN ============ -->
+<div class="modal-overlay" id="summaryModal" aria-hidden="true">
+  <div class="modal modal--summary" role="dialog" aria-modal="true">
+    <button class="modal__close" id="summaryClose" aria-label="Cerrar">&times;</button>
+    <h3 class="modal__title">TU PEDIDO</h3>
+    <div id="summaryContent" class="summary-content"></div>
+    <div class="modal__footer">
+      <div class="modal__total">TOTAL: <span id="summaryTotal">Bs. 0</span></div>
+      <button class="btn btn--gold btn--block" id="confirmOrderBtn">CONFIRMAR PEDIDO</button>
+    </div>
+    <p class="summary-note">Al confirmar se generará un mensaje para enviarte por WhatsApp.</p>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
